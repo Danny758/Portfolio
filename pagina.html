@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Proyecto portfolio</title>
+    <link rel="stylesheet" tyde="text/css" href="normalize.css">
+    <link rel="stylesheet" href="decorado.css">
+    <script src="https://kit.fontawesome.com/900cbb978a.js" crossorigin="anonymous"></script>
+    <meta name="referrer" content="origin">
+    <link rel="icon" href="media/cosmic.ico">
+</head>
+<body>
+    <header id = "Header">
+        <div class="logoP">
+            <h3>DaniDev</h3>
+        </div>
+        <div class="container">
+            <!--MenuHeader-->
+            <nav class="menu-conta">
+                
+                <a href="#hero" class="menu-item">inicio</a>
+                <a href="#skills" class="menu-item">habilidades</a>
+                <a href="#proyectos" class="menu-item">proyectos</a>
+                <a href="#contacto" class="cta">contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="fondo"></div>
+        <div class="container">
+            <nav class="texto">
+                <h1>Danison Giovani</h1>
+                <h2>Backend Developer</h2>
+                <p><br>Soy un estudiante de programacion en Frogames Formación SL y he desarrollado esta pagina como muestra de mis conocimientos en el desarrollo web y uso de tecnologias del lado del servidor.</p>
+                <form action="https://certificates.frogamesformacion.com/profile/danisonpadron953257/wallet" target="_blank">
+                    <button class="boton">
+                        <span>Certificados</span>
+                    </button>
+                </form>
+                <form action="https://github.com/Danny758" target="_blank">
+                    <button class="boton">
+                        <span>Github</span>
+                    </button>
+                </form>
+            </nav>
+            <img src="media/png21.png">
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <nav class="arriba">
+            <h3>Habilidades</h3>
+            </nav>
+            <hr class="h">
+
+            <div class="grid-container">
+                <div class="grid-item"><img src="media/html.png"><h1 class="txt">HTML</h1></div>
+                <div class="grid-item"><img src="media/css.png"><h1 class="txt">CSS</h1></div>
+                <div class="grid-item"><img src="media/javascript.png"><h1 class="txt">Javascript</h1></div>
+                <div class="grid-item"><img src="media/java.png"><h1 class="txt">Java</h1></div>
+                <div class="grid-item"><img src="media/python.png"><h1 class="txt">Python</h1></div>
+                <div class="grid-item"><img src="media/r.png"><h1 class="txt">R</h1></div>
+                <div class="grid-item"><img src="media/nodejs.png"><h1 class="txt">Node</h1></div>
+                <div class="grid-item"><img src="media/sql.png"><h1 class="txt">SQL</h1></div>
+                <div class="grid-item"><img src="media/mongodb.png"><h1 class="txt">MongoDB</h1></div>
+                <div class="grid-item"><img src="media/express.png"><h1 class="txt">Express</h1></div>
+                <div class="grid-item"><img src="media/git.png"><h1 class="txt">Git</h1></div>
+                <div class="grid-item"><img src="media/github.png"><h1 class="txt">Github</h1></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+        <h2>Portfolio</h2>
+        <hr class="h">
+        <div class="programas">
+            <div class="carta">
+                <h4>Pagina web</h4>
+                    <button>+ Info</button>
+            </div>
+            <div class="carta">
+                <h4>Desarrollo de Api's</h4>
+                    <button>+ Info</button>
+            </div>
+            <div class="carta">
+                <h4>Aplicacion Python</h4>
+                    <button>+ Info</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+    <div class="content">
+        <h1 class="logo">Contactame<span> Aqui</span></h1>
+        <hr class="h">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Contacto</h3>
+                <form action="https://formspree.io/f/xknlpvll" method="POST">
+
+                    <p>
+                        <label for="fullname">Nombre completo</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label>Correo electronico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit" value="enviar">
+                            Send
+                        </button>
+                    </p>
+                    <input type="hidden" name="_next" value="https://localhost:8000">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas informacion</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Backer Street</li>
+                    <li><i class="fa-solid fa-phone"></i> 111 111 1111</li>
+                    <li><i class="fa-solid fa-envelope-open-text"></i> contact@website.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; Danidev 2023</p>
+        </div>
+    </footer>
+<script src="code.js"></script>
+</body>
+</html>

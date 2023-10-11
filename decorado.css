@@ -1,0 +1,554 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Futura Md BT";
+    background-color: #f7f7f7;
+    height: 145vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0,4), transparent), url(media/Pngthree.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x:hidden;
+}
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h4{font-size: 1.55em;}
+p{font-size: 1.25em;}
+
+.carta button{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000005;
+    box-shadow: 2px 2px 10px #000005;
+    color: white;
+    background-color: rgb(155, 31, 58);
+}
+.carta button:hover{
+    background: rgb(85, 11, 11);
+}
+
+
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 0 5%;
+    height: 100px;
+    transition: .5s;
+    font-family: Gin and Soda Personal Use Regular;
+    z-index: 10;
+    justify-content: space-between;
+
+}
+
+.container{
+    margin-left: auto;
+}
+header p{
+    font-weight: bold;
+    color: rgb(55, 142, 255);
+    font-size: 1.6em;
+    
+}
+
+/*label{
+    cursor: pointer;
+    display: initial;
+    width: 40px;
+    position: absolute;
+    margin: 26px;
+}*/
+
+.menu-conta{
+    padding: 40px;
+    margin: -10px;
+
+}
+.logoP{
+    color: #fff;
+    padding: 38px;
+    font-family: Futurist Fixed-width;
+    font-size: .5em;
+}
+.menu-item{
+    margin: 0.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    color: #f2f2f2;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+}
+.cta{
+    padding: 3px 4px;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #f2f2f2;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    list-style: none;
+    text-decoration: none;
+}
+.cta:hover{
+    color: #f2f2f2;
+    background-color: #ff3581;
+}
+.menu-item:hover{
+    color: #ff3581;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(media/imagen5.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero .container .texto{margin-top: 300px;}
+
+#hero h2{
+    color: #b70e21;
+}
+
+#hero img{
+    width: 350px;
+    opacity: 0%;
+}
+.boton{display: none;}
+
+#skills{
+    background-color: #1e030f;
+    background-size: cover;
+    background-position: center center;
+}
+
+#skills .container{
+    padding: 210px 28px;
+    height: 80%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+#skills .arriba{
+    color: white;
+}
+
+.h{
+    width: 80%;
+    height: 4px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 3, 3, 0.5),
+        transparent)
+}
+
+.grid-container{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 130px 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.grid-item img{
+    height: 74px;
+    width: 78px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #60daff;
+    transition: height width;
+    transition-duration: .5s;
+}
+.grid-item img:hover{
+    height: 84px;
+    width: 88px;
+}
+
+.txt{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    isolation: isolate;
+    text-align: center;
+    font-size: 15px;
+    font-family: FuturaTEEMed Regular;
+    color: white;
+
+}
+
+
+@media (max-width: 765px){
+    .grid-container{
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-template-columns: 120px 120px 120px 120px;
+        grid-template-rows: 120px 120px 120px;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .grid-item img{
+        height: 64px;
+        width: 68px;
+        box-shadow: 0 0 5px #b6b8b7;
+        transition: height width;
+        transition-duration: .5s;
+
+    }
+    .grid-item img:hover{
+        height: 74px;
+        width: 80px;
+    }
+    .txt{
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        isolation: isolate;
+        text-align: center;
+        font-size: 13px;
+        font-family: FuturaTEEMed Regular;
+}
+}
+
+#proyectos{
+    background-color: rgb(236, 236, 236);
+    color: #200;
+    text-align: center;
+
+}
+
+#proyectos .container{
+    padding: 170px 22px;
+}
+
+#proyectos .container p{
+    display: none;
+}
+#proyectos .container .carta{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(media/3.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(media/4.jpg);
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(media/13.jpg);
+
+}
+
+
+#contacto{background: #1e030f;}
+
+
+/*contacto*/
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    color: #fff;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+.logo span{
+    color: #b70e21
+}
+
+.contact-wrapper > *{
+    padding: 1em;
+}
+.contact-form{
+    background: #1e030f;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block{
+    grid-column: 1/3;
+}
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 4px solid #d63031;
+}
+.contact-form form button{
+    background: #b70e21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:focus,
+.contact-form form button:hover{
+    background: #d63031;
+    color: #000;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    background: #1e030f;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+    list-style: none;
+    padding: 0;
+}
+.contact-info ul li{
+    padding: .5em;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 95px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+footer{background-color: rgb(230, 230, 230);}
+footer p{margin: 0; color: rgb(100, 100, 100); padding: 12px;}
+footer .container{height: 150px; display: flex; justify-content: center; align-items: flex-end;}
+
+@media (min-width: 700px){
+    #contacto{
+        padding: 170px;
+    }
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > *{
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+    }
+
+
+.boton{
+    margin-top: 44px;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #09f,
+        #e43e3e,
+        #b700ff
+    );
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    float: left;
+    margin-inline-end: 10px;    
+}
+.boton span{
+    background-color: #111;
+    padding: 10px 24px;
+    border-radius: 20px;
+    transition: .3s;
+}
+.boton:hover span{
+    background: none;
+}
+.boton:active{
+    transform: scale(0.9);
+}
+#hero .container .texto{margin-top: 0;}
+#hero{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+    ,url(media/222368-628f271f25f24.jpg);
+
+}
+
+#hero .fondo{
+    position:absolute;
+    background: linear-gradient(10deg,#1e030f, #370a22cb);
+    height: 62.5%;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 42% 100%, 0% 100%);
+}
+
+
+#hero .container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px;
+    z-index: 5;
+}
+
+#hero nav.texto{
+    padding: 0px 10px;
+    width: 50%;
+    max-width: 500px;
+    text-align: initial;
+    flex-direction: column;
+
+}
+
+#hero h1{
+    margin: -2px;
+    animation: teclear 3s steps(16), efecto .5s step-end infinite alternate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#hero h2{
+    font-size: 1.3em;
+    font-family: Consolas;
+}
+#hero p{
+    font-size: 1em;
+    font-family: Aileron;
+    opacity: 50%;
+    width: 350px;
+    margin-top: 15px;
+}
+
+.menu-item{
+    margin: 0.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    color: #f2f2f2;
+    list-style: none;
+    text-decoration: none;
+    padding: 14px;
+}
+.cta{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #f2f2f2;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+#proyectos .programas{
+    display: flex;
+    justify-content: center;
+    cursor:pointer ;
+
+}
+#proyectos .container button{
+    margin-top: 20px;
+}
+
+#proyectos .container .carta{
+    padding: 80px;
+    width: 300px;
+}
+
+}
+
+@keyframes teclear {
+   from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+   }
+   to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+
+@keyframes efecto {
+    50%{
+        border-color: transparent;
+    }
+}
